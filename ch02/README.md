@@ -22,9 +22,9 @@ int main(void)
 프로그램의 실행이 시작되는 메인 함수 시작
 
 ```
-std::cout << "Hello world!!";
+std::cout << "Hello";
 ```
-화면에 "Hello world!!"를 출력함.std::cout은 화면에 출력해주는 객체, << 는 삽입 연산자 함수임
+화면에 "Hello"를 출력함.std::cout은 화면에 출력해주는 객체, << 는 삽입 연산자 함수임
 
 ```
 std::cout << std::endl;
