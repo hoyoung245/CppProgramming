@@ -15,7 +15,7 @@ int main() {
     cin >> n1 >> n2 >> n3 >> n4;
 
     int sum = n1 + n2 + n3 + n4;
-    double avg = sum / 4.0; // 소수점 계산을 위해 4.0으로 나눔
+    double avg = sum / 4.0;
 
     cout << "평균: " << avg << endl;
 
