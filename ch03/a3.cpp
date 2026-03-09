@@ -31,3 +31,18 @@ int main() {
 
     return 0;
 }
+
+// 실습과제4
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "*   *" << endl;
+    cout << " * * " << endl;
+    cout << "  *  " << endl;
+    cout << " * * " << endl;
+    cout << "*   *" << endl;
+
+    return 0;
+}
