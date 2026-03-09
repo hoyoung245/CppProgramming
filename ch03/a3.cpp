@@ -4,6 +4,8 @@
 // 작성자 : 2301417 석호영
 // **********************************************
 
+
+// 실습과제2
 #include <iostream>
 using namespace std;
 
@@ -13,6 +15,19 @@ int main() {
     cout << "Address : gunsan daehakro 558" << endl;
     cout << "ID : 201012" << endl;
     cout << "Car : Benz" << endl;
+
+    return 0;
+}
+
+// 실습과제3
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    cout << "gunsandae \"honggildong\"" << endl;
+    cout << "\"congratulation\"" << endl;
+    cout << "100% \\chwieoblyul\\" << endl;
 
     return 0;
 }
