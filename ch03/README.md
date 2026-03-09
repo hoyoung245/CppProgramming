@@ -22,3 +22,8 @@ C++에서는 ostream 자료형을 사용한다.
 # 실행결과
 
 <img width="716" height="136" alt="실습과제2" src="https://github.com/user-attachments/assets/7f140291-b45c-4b66-ac34-17eddeeaee70" />
+
+# 실습과제3
+# 실행결과
+
+<img width="546" height="116" alt="실습과제 3" src="https://github.com/user-attachments/assets/b021e781-2810-47c8-8b4b-51aa5123a893" />
