@@ -18,6 +18,7 @@ C언어에서는 FILE 자료형을 사용한다.
 # 표준 출력 스트림을 정의할 때 사용하는 C++언어 자료형은?
 C++에서는 ostream 자료형을 사용한다.
 
-# 실습과제2 실행결과
+# 실습과제2 
+# 실행결과
 
 <img width="716" height="136" alt="실습과제2" src="https://github.com/user-attachments/assets/7f140291-b45c-4b66-ac34-17eddeeaee70" />
