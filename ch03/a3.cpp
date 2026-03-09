@@ -46,3 +46,21 @@ int main() {
 
     return 0;
 }
+
+// 실습과제5
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for (int n = 1; n <= 4; n++) {
+
+        for (int i = 0; i < n; i++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
