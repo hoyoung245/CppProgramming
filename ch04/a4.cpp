@@ -73,6 +73,22 @@ int main() {
 }
 
 // 실습과제5
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    char text[100];
+
+    cout << "빈칸 없이 문자열을 입력하세요>>";
+    cin >> text;
+
+    for (int i = 0; text[i] != '\0'; i++) {
+        cout << text[i] << " ";
+    }
+
+    return 0;
+}
 
 // 실습과제6
 
