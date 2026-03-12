@@ -4,5 +4,21 @@
 // 작성자 : 2301417 석호영
 // **********************************************
 
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int x, y;
+
+    cout << "정수 x를 입력 하시오: ";
+    cin >> x;
+
+    y = x * x + 2 * x - 5;
+
+    cout << "x=" << x << " 일때 y의 값은 " << y << "입니다." << endl;
+
+    return 0;
+}
 
 
