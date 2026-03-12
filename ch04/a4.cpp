@@ -51,6 +51,26 @@ int main() {
 }
 
 // 실습과제4
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    double a, sum = 0;
+
+    cout << "실수 5개를 입력하세요: ";
+
+    for (int i = 0; i < 5; i++) {
+        cin >> a;
+
+        if (a > 0)
+            sum += a;
+    }
+
+    cout << "양수 합은: " << sum << "입니다" << endl;
+
+    return 0;
+}
 
 // 실습과제5
 
