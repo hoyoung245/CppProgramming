@@ -23,6 +23,32 @@ int main() {
 }
 
 // 실습과제3
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    char name[50];
+    char address[100];
+
+    cout << "학번을 입력하시오: ";
+    cin >> n;
+
+    cin.ignore();
+
+    cout << "이름을 입력하시오: ";
+    cin.getline(name, 50);
+
+    cout << "주소를 입력하시오: ";
+    cin.getline(address, 100);
+
+    cout << "1.학번:" << n << endl;
+    cout << "2.이름:" << name << endl;
+    cout << "3.주소:" << address << endl;
+
+    return 0;
+}
 
 // 실습과제4
 
