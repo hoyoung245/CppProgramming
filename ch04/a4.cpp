@@ -91,4 +91,35 @@ int main() {
 }
 
 // 실습과제6
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+
+    char text[100];
+
+    while (true) {
+        cout << "영문 텍스트를 입력하세요(빈칸 포함 가능)>>";
+        cin.getline(text, 100);
+
+        if (strcmp(text, "exit") == 0)
+            break;
+
+        int count = 0;
+
+        if (text[0] != '\0')
+            count = 1;
+
+        for (int i = 0; text[i] != '\0'; i++) {
+            if (text[i] == ' ')
+                count++;
+        }
+
+        cout << "단어의 개수는 " << count << "개이다." << endl;
+    }
+
+    return 0;
+}
+
 
