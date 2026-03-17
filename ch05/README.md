@@ -495,7 +495,7 @@ return 0;
 ```
 프로그램을 정상적으로 종료한다.
 
-실행결과
+# 실행결과
 
 <img width="381" height="140" alt="화면 캡처 2026-03-17 221630" src="https://github.com/user-attachments/assets/d7102e50-986c-43bf-9a39-4d849f5c1897" />
 
