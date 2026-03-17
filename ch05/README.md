@@ -327,6 +327,10 @@ cout << "사각형의 우측하단의 좌표는 (" << r.x2 << "," << r.y2 << ")"
 return 0;
 ```
 프로그램을 정상적으로 종료한다.
+# 실행결과
+<img width="378" height="114" alt="화면 캡처 2026-03-17 221410" src="https://github.com/user-attachments/assets/b5559da0-9913-4859-a98f-56be4b60de0b" />
+
+
 
 # 실습과제 5
 
