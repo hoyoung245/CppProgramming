@@ -4,7 +4,7 @@
 // 작성자 : 2301417 석호영
 // **********************************************
 
-// 실습과제2
+// 실습과제2 **********************************************
 #include <iostream>
 using namespace std;
 class Triangle {
@@ -24,7 +24,7 @@ int main() {
 	return 0;
 }
 
-// 실습과제3
+// 실습과제3 **********************************************
 #include <iostream>
 using namespace std;
 class Sphere {
@@ -47,7 +47,7 @@ int main() {
 	return 0;
 }
 
-// 실습과제4
+// 실습과제4 **********************************************
 #include <iostream>
 using namespace std;
 class Rectangle {
@@ -85,7 +85,7 @@ int main() {
 	return 0;
 }
 
-// 실습과제5
+// 실습과제5 **********************************************
 #include <iostream>
 using namespace std;
 class Rectangle {
