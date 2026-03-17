@@ -10,3 +10,79 @@
 # 실습과제 2
 # 소스코드 설명
 
+# 소스코드 설명
+
+
+#include <iostream>
+
+- 표준 입출력을 위해 iostream 헤더파일을 포함한다.
+
+
+using namespace std;
+
+- std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+
+class Triangle
+
+- Triangle 클래스를 선언한다.
+
+
+public:
+
+- 외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+
+double s;
+
+- 삼각형의 밑변 길이를 저장하는 실수형 변수이다.
+
+
+double h;
+
+- 삼각형의 높이를 저장하는 실수형 변수이다.
+
+
+double getArea();
+
+- 삼각형의 면적을 계산하여 반환하는 멤버 함수를 선언한다.
+
+
+double Triangle::getArea()
+
+- Triangle 클래스의 멤버 함수 getArea를 정의하는 부분이다.
+
+
+return s * h * 0.5;
+
+- 밑변과 높이를 이용해 삼각형의 면적을 계산하여 반환한다.
+
+
+int main()
+
+- 프로그램이 시작되는 메인 함수이다.
+
+
+Triangle t;
+
+- Triangle 객체 t를 생성한다.
+
+
+t.s = 3.0;
+
+- 객체 t의 밑변 값 s에 3.0을 저장한다.
+
+
+t.h = 5.0;
+
+- 객체 t의 높이 값 h에 5.0을 저장한다.
+
+
+cout << "삼각형의 면적은 " << t.getArea();
+
+- getArea 함수를 호출하여 계산된 면적을 출력한다.
+
+
+return 0;
+
+- 프로그램을 정상적으로 종료한다.
