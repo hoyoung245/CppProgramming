@@ -85,6 +85,8 @@ return 0;
 ```
 프로그램을 정상적으로 종료한다.
 # 실행결과
+<img width="240" height="72" alt="화면 캡처 2026-03-17 221036" src="https://github.com/user-attachments/assets/f68489f9-0995-481f-a948-311b882054a4" />
+
 
 # 실습과제 3
 
