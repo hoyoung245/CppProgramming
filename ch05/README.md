@@ -322,3 +322,168 @@ cout << "사각형의 우측하단의 좌표는 (" << r.x2 << "," << r.y2 << ")"
 return 0;
 ```
 프로그램을 정상적으로 종료한다.
+
+# 실습과제 5
+
+# 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 위해 iostream 헤더파일을 포함한다.
+
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+```
+class Rectangle
+```
+Rectangle 클래스를 선언한다.
+
+```
+public:
+```
+외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+```
+int width;
+```
+사각형의 가로 길이를 저장하는 정수형 변수이다.
+
+```
+int height;
+```
+사각형의 높이를 저장하는 정수형 변수이다.
+
+```
+int x, x2;
+```
+좌측 상단과 우측 하단의 x좌표를 저장하는 정수형 변수이다.
+
+```
+int y, y2;
+```
+좌측 상단과 우측 하단의 y좌표를 저장하는 정수형 변수이다.
+
+```
+int getArea();
+```
+사각형의 면적을 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+int getPerimeter();
+```
+사각형의 둘레를 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+void getXY();
+```
+우측 하단 좌표를 계산하는 멤버 함수를 선언한다.
+
+```
+void getRectinfo();
+```
+사용자로부터 입력을 받아 멤버 변수에 저장하는 멤버 함수를 선언한다.
+
+```
+int Rectangle::getArea()
+```
+Rectangle 클래스의 멤버 함수 getArea를 정의하는 부분이다.
+
+```
+return width * height;
+```
+가로와 세로를 이용해 사각형의 면적을 계산하여 반환한다.
+
+```
+int Rectangle::getPerimeter()
+```
+Rectangle 클래스의 멤버 함수 getPerimeter를 정의하는 부분이다.
+
+```
+return 2 * (width + height);
+```
+가로와 세로를 이용해 사각형의 둘레를 계산하여 반환한다.
+
+```
+void Rectangle::getXY()
+```
+Rectangle 클래스의 멤버 함수 getXY를 정의하는 부분이다.
+
+```
+x2 = x + width;
+```
+우측 하단의 x좌표를 계산하여 x2에 저장한다.
+
+```
+y2 = y - height;
+```
+우측 하단의 y좌표를 계산하여 y2에 저장한다.
+
+```
+void Rectangle::getRectinfo()
+```
+Rectangle 클래스의 멤버 함수 getRectinfo를 정의하는 부분이다.
+
+```
+cout << "사각형의 좌측상단좌표(x,y): ";
+```
+사용자에게 좌측 상단 좌표 입력을 안내하는 문장을 출력한다.
+
+```
+cin >> x >> y;
+```
+입력받은 값을 x와 y에 저장한다.
+
+```
+cout << "사각형의 폭과 높이(width,height): ";
+```
+사용자에게 가로와 높이 입력을 안내하는 문장을 출력한다.
+
+```
+cin >> width >> height;
+```
+입력받은 값을 width와 height에 저장한다.
+
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+
+```
+Rectangle r;
+```
+Rectangle 객체 r을 생성한다.
+
+```
+r.getRectinfo();
+```
+getRectinfo 함수를 호출하여 값을 입력받는다.
+
+```
+cout << "사각형의 면적은 " << r.getArea() << endl;
+```
+getArea 함수를 호출하여 계산된 면적을 출력한다.
+
+```
+cout << "사각형의 둘레길이는 " << r.getPerimeter() << endl;
+```
+getPerimeter 함수를 호출하여 계산된 둘레를 출력한다.
+
+```
+r.getXY();
+```
+getXY 함수를 호출하여 우측 하단 좌표를 계산한다.
+
+```
+cout << "사각형의 우측하단의 좌표는 (" << r.x2 << "," << r.y2 << ")";
+```
+계산된 우측 하단 좌표를 출력한다.
+
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
+
+# 실행결과
