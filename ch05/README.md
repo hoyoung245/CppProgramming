@@ -176,6 +176,9 @@ return 0;
 ```
 프로그램을 정상적으로 종료한다.
 # 실행결과
+<img width="439" height="97" alt="화면 캡처 2026-03-17 221256" src="https://github.com/user-attachments/assets/111ab1fa-40f4-4d76-ba82-e2a18e362575" />
+
+
 
 # 실습과제 4
 # 소스코드 설명
