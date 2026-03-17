@@ -89,5 +89,91 @@ return 0;
 # 실습과제 3
 # 소스코드 설명
 
+# 소스코드 설명
 
+```
+#include <iostream>
+```
+표준 입출력을 위해 iostream 헤더파일을 포함한다.
+
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+```
+class Sphere
+```
+Sphere 클래스를 선언한다.
+
+```
+public:
+```
+외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+```
+double r;
+```
+구의 반지름을 저장하는 실수형 변수이다.
+
+```
+double getVolume();
+```
+구의 부피를 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+double getArea();
+```
+구의 표면적을 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+double Sphere::getVolume()
+```
+Sphere 클래스의 멤버 함수 getVolume을 정의하는 부분이다.
+
+```
+return (4.0 / 3.0) * 3.14 * r * r * r;
+```
+반지름을 이용해 구의 부피를 계산하여 반환한다.
+
+```
+double Sphere::getArea()
+```
+Sphere 클래스의 멤버 함수 getArea를 정의하는 부분이다.
+
+```
+return 4 * 3.14 * r * r;
+```
+반지름을 이용해 구의 표면적을 계산하여 반환한다.
+
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+
+```
+Sphere s;
+```
+Sphere 객체 s를 생성한다.
+
+```
+s.r = 6.3;
+```
+객체 s의 반지름 값 r에 6.3을 저장한다.
+
+```
+cout << "구의 부피는 " << s.getVolume() << endl;
+```
+getVolume 함수를 호출하여 계산된 부피를 출력한다.
+
+```
+cout << "구의 표면적은 " << s.getArea();
+```
+getArea 함수를 호출하여 계산된 표면적을 출력한다.
+
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
+# 실행결과
 
