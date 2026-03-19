@@ -257,9 +257,7 @@ void getRightBottom();
 우측 하단 좌표를 출력하는 멤버 함수를 선언한다.
 
 ```
-Rectangle::Rectangle(int x, int y, int w, int h)
-: x(x), y(y), width(w), height(h) {
-}
+Rectangle::Rectangle(int x, int y, int w, int h): x(x), y(y), width(w), height(h) {}
 ```
 매개변수로 받은 값으로 좌표와 가로, 높이를 초기화하는 생성자이다.
 
