@@ -102,9 +102,15 @@ return 0;
 # 소스코드 설명
 
 # 실행결과
+<img width="310" height="105" alt="화면 캡처 2026-03-19 195304" src="https://github.com/user-attachments/assets/380dfdd6-8c30-4749-a419-b2fc67246d1d" />
+
 
 # 실습과제 4
 
 # 소스코드 설명
 
 # 실행결과
+<img width="357" height="129" alt="화면 캡처 2026-03-19 195416" src="https://github.com/user-attachments/assets/d1abd386-702c-4442-b669-80dde49fdc76" />
+
+
+
