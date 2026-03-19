@@ -100,7 +100,94 @@ return 0;
 # 실습과제 3
 
 # 소스코드 설명
+#include <iostream>
 
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+
+
+using namespace std;
+
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+
+class Sphere
+
+Sphere 클래스를 선언한다.
+
+
+double radius;
+
+구의 반지름을 저장하는 실수형 멤버 변수이다.
+
+
+public:
+
+외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+
+Sphere();
+
+매개변수가 없는 기본 생성자를 선언한다.
+
+
+Sphere(double a);
+
+반지름 값을 받아 초기화하는 생성자를 선언한다.
+
+
+double getVolume();
+
+구의 부피를 계산하여 반환하는 멤버 함수를 선언한다.
+
+
+double Sphere::getVolume()
+
+Sphere 클래스의 멤버 함수 getVolume을 정의하는 부분이다.
+
+
+return (4.0 / 3.0) * 3.14 * radius * radius * radius;
+
+반지름을 이용해 구의 부피를 계산하여 반환한다.
+
+
+Sphere::Sphere() : Sphere(1.0) {}
+
+기본 생성자이며 다른 생성자를 호출하는 위임 생성자이다.
+
+
+Sphere::Sphere(double a) : radius(a) {}
+
+매개변수 a 값을 이용해 radius를 초기화하는 생성자이다.
+
+
+int main()
+
+프로그램이 시작되는 메인 함수이다.
+
+
+Sphere sph1;
+
+Sphere 객체 sph1을 생성한다.
+
+
+cout << "구의 부피는" << sph1.getVolume() << endl;
+
+sph1의 부피를 계산하여 출력한다.
+
+
+Sphere sph2(3);
+
+반지름이 3인 Sphere 객체 sph2를 생성한다.
+
+
+cout << "구의 부피는" << sph2.getVolume() << endl;
+
+sph2의 부피를 계산하여 출력한다.
+
+
+return 0;
+
+프로그램을 정상적으로 종료한다.
 # 실행결과
 <img width="310" height="105" alt="화면 캡처 2026-03-19 195304" src="https://github.com/user-attachments/assets/380dfdd6-8c30-4749-a419-b2fc67246d1d" />
 
