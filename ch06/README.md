@@ -196,7 +196,157 @@ return 0;
 # 실습과제 4
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
 
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+```
+class Rectangle
+```
+Rectangle 클래스를 선언한다.
+
+```
+public:
+```
+외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+```
+int width, height;
+```
+사각형의 가로와 높이를 저장하는 정수형 멤버 변수이다.
+
+```
+int x, y;
+```
+사각형의 좌측 상단 좌표를 저장하는 정수형 멤버 변수이다.
+
+```
+Rectangle();
+```
+매개변수가 없는 기본 생성자를 선언한다.
+
+```
+Rectangle(int x, int y);
+```
+좌표 값을 받아 초기화하는 생성자를 선언한다.
+
+```
+Rectangle(int x, int y, int w, int h);
+```
+좌표와 가로, 높이를 받아 초기화하는 생성자를 선언한다.
+
+```
+int getArea();
+```
+사각형의 면적을 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+int getPerimeter();
+```
+사각형의 둘레를 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+void getRightBottom();
+```
+우측 하단 좌표를 출력하는 멤버 함수를 선언한다.
+
+```
+Rectangle::Rectangle(int x, int y, int w, int h)
+: x(x), y(y), width(w), height(h) {
+}
+```
+매개변수로 받은 값으로 좌표와 가로, 높이를 초기화하는 생성자이다.
+
+```
+Rectangle::Rectangle() : Rectangle(1, 1, 1, 1) {}
+```
+기본 생성자이며 다른 생성자를 호출하는 위임 생성자이다.
+
+```
+Rectangle::Rectangle(int x, int y) : Rectangle(x, y, 1, 1) {}
+```
+좌표만 받아 기본 크기로 초기화하는 생성자이다.
+
+```
+int Rectangle::getArea()
+```
+Rectangle 클래스의 멤버 함수 getArea를 정의하는 부분이다.
+
+```
+return width * height;
+```
+가로와 높이를 이용해 사각형의 면적을 계산하여 반환한다.
+
+```
+int Rectangle::getPerimeter()
+```
+Rectangle 클래스의 멤버 함수 getPerimeter를 정의하는 부분이다.
+
+```
+return 2 * (width + height);
+```
+가로와 높이를 이용해 사각형의 둘레를 계산하여 반환한다.
+
+```
+void Rectangle::getRightBottom()
+```
+Rectangle 클래스의 멤버 함수 getRightBottom을 정의하는 부분이다.
+
+```
+cout << "(" << x + width << ", " << y - height << ")" << endl;
+```
+우측 하단 좌표를 계산하여 출력한다.
+
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+
+```
+Rectangle rect1;
+```
+Rectangle 객체 rect1을 생성한다.
+
+```
+Rectangle rect2(3, 5);
+```
+좌표가 (3, 5)인 Rectangle 객체 rect2를 생성한다.
+
+```
+Rectangle rect3(3, 5, 2, 4);
+```
+좌표와 크기를 지정한 Rectangle 객체 rect3을 생성한다.
+
+```
+cout << "rect1의 면적은 " << rect1.getArea() << endl;
+```
+rect1의 면적을 계산하여 출력한다.
+
+```
+cout << "rect2의 둘레길이는 " << rect2.getPerimeter() << endl;
+```
+rect2의 둘레를 계산하여 출력한다.
+
+```
+cout << "rect3의 우측하단 좌표는 ";
+```
+rect3의 우측 하단 좌표를 출력하기 위한 문장을 출력한다.
+
+```
+rect3.getRightBottom();
+```
+우측 하단 좌표를 계산하여 출력하는 함수를 호출한다.
+
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 # 실행결과
 <img width="357" height="129" alt="화면 캡처 2026-03-19 195416" src="https://github.com/user-attachments/assets/d1abd386-702c-4442-b669-80dde49fdc76" />
 
