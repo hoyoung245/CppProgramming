@@ -9,7 +9,7 @@ public:
 	double getArea();
 };
 
-Triangle::Triangle(): Triangle(1,1) {}
+Triangle::Triangle() : Triangle(1, 1) {}
 Triangle::Triangle(double a, double b) : s(a), h(b) {
 	cout << "밑변" << s << " 높이" << h << "인 삼각형 생성" << endl;
 }
