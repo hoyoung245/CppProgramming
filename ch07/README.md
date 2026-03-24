@@ -392,6 +392,8 @@ return 0;
 
 
 # 실행결과
+<img width="222" height="152" alt="화면 캡처 2026-03-24 200105" src="https://github.com/user-attachments/assets/e95ba9a0-d170-4503-924c-5d8d372ebf33" />
+
 
 
 # 실습과제 5
