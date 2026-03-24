@@ -160,6 +160,116 @@ return 0;
 # 실습과제 3
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+```
+class Triangle
+```
+Triangle 클래스를 선언한다.
+
+```
+public:
+```
+외부에서 접근 가능한 멤버를 선언하기 위한 접근 지정자이다.
+
+```
+double s, h;
+```
+삼각형의 밑변과 높이를 저장하는 실수형 멤버 변수이다.
+
+```
+Triangle();
+```
+매개변수가 없는 기본 생성자를 선언한다.
+
+```
+Triangle(double a, double b);
+```
+밑변과 높이를 받아 초기화하는 생성자를 선언한다.
+
+```
+~Triangle();
+```
+객체가 소멸될 때 실행되는 소멸자를 선언한다.
+
+```
+double getArea();
+```
+삼각형의 면적을 계산하여 반환하는 멤버 함수를 선언한다.
+
+```
+Triangle::Triangle() : Triangle(1, 1) {}
+```
+기본 생성자이며 다른 생성자를 호출하는 위임 생성자이다.
+
+```
+Triangle::Triangle(double a, double b) : s(a), h(b)
+```
+매개변수 a와 b를 이용해 s와 h를 초기화하는 생성자이다.
+
+```
+cout << "밑변" << s << " 높이" << h << "인 삼각형 생성" << endl;
+```
+삼각형 객체가 생성될 때 메시지를 출력한다.
+
+```
+Triangle::~Triangle()
+```
+Triangle 클래스의 소멸자를 정의하는 부분이다.
+
+```
+cout << "밑변" << s << " 높이" << h << "인 삼각형 소멸" << endl;
+```
+객체가 소멸될 때 메시지를 출력한다.
+
+```
+double Triangle::getArea()
+```
+Triangle 클래스의 멤버 함수 getArea를 정의하는 부분이다.
+
+```
+return s * h * 0.5;
+```
+밑변과 높이를 이용해 삼각형의 면적을 계산하여 반환한다.
+
+```
+Triangle tri1(4, 8);
+```
+전역 객체 tri1을 생성한다. (프로그램 시작 시 생성됨)
+
+```
+Triangle tri2(2, 2);
+```
+전역 객체 tri2를 생성한다. (main 함수 실행 전에 생성됨)
+
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+
+```
+cout << "삼각형의 면적은 " << tri2.getArea() << endl;
+```
+tri2의 면적을 계산하여 출력한다.
+
+```
+cout << "삼각형의 면적은 " << tri1.getArea() << endl;
+```
+tri1의 면적을 계산하여 출력한다.
+
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
+
 
 # 실행결과
 <img width="311" height="163" alt="화면 캡처 2026-03-23 184857" src="https://github.com/user-attachments/assets/ca08a7c8-3d40-48aa-b75e-52de7762221d" />
