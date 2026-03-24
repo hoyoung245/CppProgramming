@@ -511,4 +511,5 @@ return 0;
 
 
 # 실행결과
-<img width="224" height="149" alt="화면 캡처 2026-03-24 200355" src="https://github.com/user-attachments/assets/721bc759-913d-4bca-bed5-6fa056e17c96" />
+<img width="258" height="166" alt="화면 캡처 2026-03-24 200758" src="https://github.com/user-attachments/assets/505f2e41-0274-4ea2-9ac6-d6428abc8617" />
+
