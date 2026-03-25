@@ -114,7 +114,7 @@ getRadius 함수를 호출하여 반지름 값을 출력한다.
 
 
 # 실행결과
-
+<img width="272" height="69" alt="화면 캡처 2026-03-25 221039" src="https://github.com/user-attachments/assets/f4857e18-eed4-496d-ab92-539b57d1ea54" />
 
 
 # 실습과제 3
