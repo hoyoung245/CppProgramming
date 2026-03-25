@@ -281,6 +281,7 @@ return 0;
 프로그램을 정상적으로 종료한다.
 
 # 실행결과
+<img width="241" height="147" alt="화면 캡처 2026-03-25 222126" src="https://github.com/user-attachments/assets/953545f6-2e0d-494a-a5ec-08998ddc20b5" />
 
 
 
