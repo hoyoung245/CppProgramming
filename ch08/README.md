@@ -290,14 +290,179 @@ return 0;
 # 실습과제 4
 
 # 소스코드 설명
-
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Triangle
+```
+Triangle 클래스를 선언한다.
+```
+private:
+```
+클래스 내부에서만 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+double width, height;
+```
+삼각형의 폭과 높이를 저장하는 실수형 멤버 변수이다.
+```
+double max(double a, double b);
+```
+두 값 중 더 큰 값을 반환하는 private 멤버 함수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Triangle(double w, double h);
+```
+폭과 높이를 받아 객체를 생성하는 생성자이다.
+```
+Triangle();
+```
+기본 생성자이다.
+```
+~Triangle();
+```
+객체가 소멸될 때 실행되는 소멸자이다.
+```
+double getWidth();
+```
+폭 값을 반환하는 함수이다.
+```
+double getHeight();
+```
+높이 값을 반환하는 함수이다.
+```
+double getArea();
+```
+삼각형의 넓이를 계산하여 반환하는 함수이다.
+```
+void setWidth(double w);
+```
+폭 값을 설정하는 함수이다.
+```
+void setHeight(double h);
+```
+높이 값을 설정하는 함수이다.
+```
+double Triangle::max(double a, double b)
+```
+Triangle 클래스 내부에서 사용하는 함수로 두 값 중 큰 값을 반환한다.
+```
+return a > b ? a : b;
+```
+a가 b보다 크면 a를, 아니면 b를 반환한다.
+```
+Triangle::Triangle(double w, double h) : width(max(1.0, w)), height(max(1.0, h)) {}
+```
+생성자에서 폭과 높이를 설정할 때 최소값을 1.0으로 보장하도록 초기화한다.
+```
+Triangle::Triangle() : Triangle(1, 1) {}
+```
+기본 생성자이며 위의 생성자를 호출하는 위임 생성자이다.
+```
+Triangle::~Triangle()
+```
+Triangle 객체가 소멸될 때 실행된다.
+```
+cout << "폭" << width << " 높이" << height << " 삼각형 소멸" << endl;
+```
+객체가 소멸될 때 메시지를 출력한다.
+```
+double Triangle::getWidth()
+```
+현재 폭 값을 반환하는 함수이다.
+```
+return width;
+```
+```
+double Triangle::getHeight()
+```
+현재 높이 값을 반환하는 함수이다.
+```
+return height;
+```
+```
+double Triangle::getArea()
+```
+삼각형의 넓이를 계산하는 함수이다.
+```
+return width * height / 2;
+```
+폭과 높이를 이용하여 넓이를 계산한다.
+```
+void Triangle::setWidth(double w)
+```
+폭 값을 설정하는 함수이다.
+```
+width = max(1.0, w);
+```
+폭이 1보다 작으면 1로 설정된다.
+```
+void Triangle::setHeight(double h)
+```
+높이 값을 설정하는 함수이다.
+```
+height = max(1.0, h);
+```
+높이가 1보다 작으면 1로 설정된다.
+```
+int main(void)
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Triangle tri(-10, -5);
+```
+폭과 높이에 음수를 넣어 객체를 생성하지만 최소값 1로 설정된다.
+```
+tri.setWidth(-3);
+```
+폭을 음수로 설정하려 하지만 1로 유지된다.
+```
+tri.setHeight(-5);
+```
+높이를 음수로 설정하려 하지만 1로 유지된다.
+```
+cout << "삼각형의 폭은 " << tri.getWidth() << endl;
+```
+현재 폭 값을 출력한다.
+```
+cout << "삼각형의 높이는 " << tri.getHeight() << endl;
+```
+현재 높이 값을 출력한다.
+```
+cout << "삼각형의 넓이는 " << tri.getArea() << endl;
+```
+삼각형의 넓이를 출력한다.
+```
+tri.setWidth(3);
+```
+폭을 3으로 설정한다.
+```
+tri.setHeight(5);
+```
+높이를 5로 설정한다.
+```
+cout << "삼각형의 폭은 " << tri.getWidth() << endl;
+```
+폭 값을 출력한다.
+```
+cout << "삼각형의 높이는 " << tri.getHeight() << endl;
+```
+높이 값을 출력한다.
+```
+cout << "삼각형의 넓이는 " << tri.getArea() << endl;
+```
+삼각형의 넓이를 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 # 실행결과
-
-
-
-
-# 실습과제 5
-
-# 소스코드 설명
-
-# 실행결과
+<img width="371" height="216" alt="화면 캡처 2026-03-26 141103" src="https://github.com/user-attachments/assets/6a90d7ae-86b3-4b17-ba77-51282eec5a1d" />
