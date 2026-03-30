@@ -122,22 +122,29 @@ return 0;
 ```
 프로그램을 정상적으로 종료한다.
 # 실행결과
+<img width="238" height="108" alt="과제2" src="https://github.com/user-attachments/assets/b3257de7-0f71-4cd7-86a1-e2cf29df055b" />
 
 
 
-# 실습과제 3
-
-# 소스코드 설명
-
-# 실행결과
-
-
-
-
-
-# 실습과제 4
+# 실습과제 3 문제 2번
 
 # 소스코드 설명
 
 # 실행결과
+<img width="238" height="219" alt="과제3 2" src="https://github.com/user-attachments/assets/83e6d466-bb69-444c-b20f-7b812b255697" />
 
+
+
+# 실습과제 3 문제 3번
+
+# 소스코드 설명
+
+# 실행결과
+<img width="302" height="106" alt="과제3 3" src="https://github.com/user-attachments/assets/94a7d4a9-c00d-4f24-8283-f5a1dfd0aded" />
+
+# 실습과제 3 문제 7번
+
+# 소스코드 설명
+
+# 실행결과
+<img width="253" height="93" alt="과제 3 7" src="https://github.com/user-attachments/assets/58dfdbf6-c19a-4b8c-8acd-27bafe85f538" />
