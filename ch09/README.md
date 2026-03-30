@@ -129,6 +129,153 @@ return 0;
 # 실습과제 3 문제 2번
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Coffee
+```
+Coffee 클래스를 선언한다.
+```
+private:
+```
+클래스 내부에서만 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+int coffee, sugar, milk, water;
+```
+커피, 설탕, 우유, 물의 양을 저장하는 정수형 멤버 변수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Coffee()
+```
+기본 생성자이다.
+```
+coffee = 10;
+```
+기본 커피 양을 10으로 설정한다.
+```
+sugar = 0;
+```
+기본 설탕 양을 0으로 설정한다.
+```
+milk = 0;
+```
+기본 우유 양을 0으로 설정한다.
+```
+water = 0;
+```
+기본 물의 양을 0으로 설정한다.
+```
+Coffee(int c, int s, int m, int w)
+```
+커피 재료의 양을 받아 초기화하는 생성자이다.
+```
+coffee = c;
+```
+입력받은 값으로 커피 양을 설정한다.
+
+sugar = s;
+입력받은 값으로 설탕 양을 설정한다.
+```
+milk = m;
+```
+입력받은 값으로 우유 양을 설정한다.
+```
+water = w;
+```
+입력받은 값으로 물의 양을 설정한다.
+```
+void show()
+```
+현재 커피 재료의 양을 별(*)로 출력하는 함수이다.
+```
+cout << "coffee ";
+```
+커피 양을 출력하기 위한 제목을 출력한다.
+```
+for(int i=0;i<coffee;i++) cout << "*";
+```
+coffee 값만큼 별(*)을 출력한다.
+```
+cout << endl;
+```
+줄바꿈을 한다.
+```
+cout << "sugar ";
+```
+설탕 양 제목을 출력한다.
+```
+for(int i=0;i<sugar;i++) cout << "*";
+```
+sugar 값만큼 별(*)을 출력한다.
+```
+cout << endl;
+```
+줄바꿈을 한다.
+```
+cout << "milk ";
+```
+우유 양 제목을 출력한다.
+```
+for(int i=0;i<milk;i++) cout << "*";
+```
+milk 값만큼 별(*)을 출력한다.
+```
+cout << endl;
+```
+줄바꿈을 한다.
+```
+cout << "water ";
+```
+물 양 제목을 출력한다.
+```
+for(int i=0;i<water;i++) cout << "*";
+```
+water 값만큼 별(*)을 출력한다.
+```
+cout << endl;
+```
+줄바꿈을 한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Coffee espresso;
+```
+기본 생성자를 이용하여 espresso 객체를 생성한다.
+```
+Coffee americano(5,0,0,10);
+```
+재료 값을 지정하여 americano 객체를 생성한다.
+```
+Coffee cappucchino(5,1,5,2);
+```
+재료 값을 지정하여 cappucchino 객체를 생성한다.
+```
+Coffee mySweet(3,7,5,5);
+```
+재료 값을 지정하여 mySweet 객체를 생성한다.
+```
+espresso.show();
+```
+espresso의 재료 상태를 출력한다.
+```
+cout << endl;
+```
+줄바꿈을 한다.
+```
+mySweet.show();
+```
+mySweet의 재료 상태를 출력한다.
 
 # 실행결과
 <img width="238" height="219" alt="과제3 2" src="https://github.com/user-attachments/assets/83e6d466-bb69-444c-b20f-7b812b255697" />
@@ -138,6 +285,142 @@ return 0;
 # 실습과제 3 문제 3번
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Account
+```
+Account 클래스를 선언한다.
+```
+private:
+```
+클래스 내부에서만 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+string owner;
+```
+계좌의 소유자 이름을 저장하는 문자열 변수이다.
+```
+int balance;
+```
+계좌의 잔액을 저장하는 정수형 변수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Account(string name)
+```
+계좌 소유자 이름을 받아 객체를 생성하는 생성자이다.
+```
+owner = name;
+```
+전달받은 이름을 owner에 저장한다.
+```
+balance = 0;
+```
+초기 잔액을 0으로 설정한다.
+```
+void deposit(int money)
+```
+계좌에 돈을 입금하는 함수이다.
+```
+balance += money;
+```
+현재 잔액에 money만큼 더한다.
+```
+int withdraw(int money)
+```
+계좌에서 돈을 출금하는 함수이다.
+```
+if(balance >= money)
+```
+잔액이 출금할 금액보다 많거나 같은지 확인한다.
+```
+balance -= money;
+```
+잔액에서 money만큼 차감한다.
+```
+return money;
+```
+출금한 금액을 반환한다.
+```
+else
+```
+잔액이 부족한 경우 실행된다.
+```
+int temp = balance;
+```
+현재 잔액을 temp에 저장한다.
+```
+balance = 0;
+```
+잔액을 0으로 만든다.
+```
+return temp;
+```
+남아 있던 금액을 반환한다.
+```
+int inquiry()
+```
+현재 잔액을 확인하는 함수이다.
+```
+return balance;
+```
+현재 잔액을 반환한다.
+```
+string getOwner()
+```
+계좌 소유자 이름을 반환하는 함수이다.
+```
+return owner;
+```
+소유자 이름을 반환한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Account a("황수희");
+```
+소유자가 황수희인 계좌 객체 a를 생성한다.
+```
+a.deposit(20000);
+```
+계좌에 20000원을 입금한다.
+```
+cout << a.getOwner() << " 잔액은 " << a.inquiry() << endl;
+```
+소유자 이름과 현재 잔액을 출력한다.
+```
+int money = a.withdraw(15000);
+```
+15000원을 출금하고 출금된 금액을 money에 저장한다.
+```
+cout << money << "원 출금, ";
+```
+출금된 금액을 출력한다.
+```
+cout << a.getOwner() << " 잔액은 " << a.inquiry() << endl;
+```
+출금 후 잔액을 출력한다.
+```
+money = a.withdraw(8000);
+```
+8000원을 출금하려고 시도한다.
+```
+cout << money << "원 출금, ";
+```
+실제로 출금된 금액을 출력한다.
+```
+cout << a.getOwner() << " 잔액은 " << a.inquiry() << endl;
+```
+최종 잔액을 출력한다.
 
 # 실행결과
 <img width="302" height="106" alt="과제3 3" src="https://github.com/user-attachments/assets/94a7d4a9-c00d-4f24-8283-f5a1dfd0aded" />
