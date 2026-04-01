@@ -212,6 +212,78 @@ return 0;
 # 실습과제 4
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Triangle
+```
+Triangle 클래스를 선언한다.
+```
+int width, height;
+```
+삼각형의 밑변과 높이를 저장하는 정수형 멤버 변수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Triangle(int w = 1, int h = 1)
+```
+밑변과 높이를 설정하는 생성자이며 기본값을 1로 지정한 생성자이다.
+```
+width = w;
+```
+밑변 값을 w로 설정한다.
+```
+height = h;
+```
+높이 값을 h로 설정한다.
+```
+cout << "밑변" << w << ",높이" << h << "인 삼각형 생성" << endl;
+```
+삼각형 객체가 생성될 때 메시지를 출력한다.
+```
+~Triangle()
+```
+객체가 소멸될 때 실행되는 소멸자이다.
+```
+cout << "밑변" << width << ",높이" << height << "인 삼각형 소멸" << endl;
+```
+객체가 소멸될 때 메시지를 출력한다.
+```
+double getArea()
+```
+삼각형의 면적을 계산하는 함수이다.
+```
+return width * height / 2.0;
+```
+밑변과 높이를 이용하여 삼각형의 면적을 계산한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Triangle arr[3] = { Triangle(2,2), Triangle(4,4), Triangle(6,6) };
+```
+Triangle 객체 3개를 배열로 생성한다.
+```
+for(int i=0; i<3; i++)
+```
+배열에 있는 삼각형 객체를 반복문으로 하나씩 접근한다.
+```
+cout << "삼각형" << i << "의 면적은 " << arr[i].getArea() << endl;
+```
+각 삼각형의 면적을 계산하여 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 
 # 실행결과
 <img width="255" height="231" alt="과제 4" src="https://github.com/user-attachments/assets/42991b23-9a96-47ad-a2c7-183310cdfd9a" />
