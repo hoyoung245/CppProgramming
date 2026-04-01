@@ -108,6 +108,102 @@ return 0;
 # 실습과제 3
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Triangle
+```
+Triangle 클래스를 선언한다.
+```
+int width, height;
+```
+삼각형의 폭과 높이를 저장하는 정수형 멤버 변수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Triangle()
+```
+기본 생성자이다.
+```
+this->width = 1;
+```
+삼각형의 폭을 1로 초기화한다.
+```
+this->height = 1;
+```
+삼각형의 높이를 1로 초기화한다.
+```
+Triangle(int w)
+```
+폭만 입력받는 생성자이다.
+```
+this->width = w;
+```
+폭을 w 값으로 설정한다.
+```
+this->height = 1;
+```
+높이는 기본값 1로 설정한다.
+```
+Triangle(int w, int h)
+```
+폭과 높이를 모두 입력받는 생성자이다.
+```
+this->width = w;
+```
+폭을 w 값으로 설정한다.
+```
+this->height = h;
+```
+높이를 h 값으로 설정한다.
+```
+double getArea()
+```
+삼각형의 면적을 계산하는 함수이다.
+```
+return this->width * this->height / 2.0;
+```
+폭과 높이를 이용하여 삼각형의 면적을 계산한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Triangle tri1;
+```
+기본 생성자를 이용해 tri1 객체를 생성한다.
+```
+cout << "삼각형의 면적은 " << tri1.getArea() << endl;
+```
+tri1의 면적을 계산하여 출력한다.
+```
+Triangle tri2(10);
+```
+폭이 10인 삼각형 객체 tri2를 생성한다.
+```
+cout << "삼각형의 면적은 " << tri2.getArea() << endl;
+```
+tri2의 면적을 계산하여 출력한다.
+```
+Triangle tri3(10, 2);
+```
+폭이 10이고 높이가 2인 삼각형 객체 tri3를 생성한다.
+```
+cout << "삼각형의 면적은 " << tri3.getArea() << endl;
+```
+tri3의 면적을 계산하여 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 
 # 실행결과
 <img width="250" height="104" alt="과제 3" src="https://github.com/user-attachments/assets/6dd1a042-353a-4d64-97b9-8a8969e37baf" />
