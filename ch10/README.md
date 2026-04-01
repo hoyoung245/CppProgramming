@@ -16,12 +16,16 @@
 # 소스코드 설명
 
 # 실행결과
+<img width="218" height="65" alt="과제 2" src="https://github.com/user-attachments/assets/6eae8819-18f8-44c6-832c-a0101d947ea0" />
+
 
 # 실습과제 3
 
 # 소스코드 설명
 
 # 실행결과
+<img width="250" height="104" alt="과제 3" src="https://github.com/user-attachments/assets/6dd1a042-353a-4d64-97b9-8a8969e37baf" />
+
 
 # 실습과제 4
 
