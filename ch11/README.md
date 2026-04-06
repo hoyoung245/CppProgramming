@@ -22,7 +22,6 @@ nullptr은 C++11에서 도입된 포인터 전용 null 값으로, NULL보다 타
 # 실습과제 3
 
 # 소스코드 설명
-# 소스코드 설명
 
 #include <iostream>
 표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
@@ -78,6 +77,57 @@ return 0;
 # 실습과제 4
 
 # 소스코드 설명
+
+#include <iostream>
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+
+using namespace std;
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+
+int main()
+프로그램이 시작되는 메인 함수이다.
+
+int n;
+입력받을 실수의 개수를 저장할 변수이다.
+
+cout << "입력할 실수의 개수를 입력하세요: ";
+사용자에게 입력 안내 메시지를 출력한다.
+
+cin >> n;
+실수의 개수를 입력받아 n에 저장한다.
+
+if (n <= 0) return -1;
+입력값이 0 이하이면 프로그램을 종료한다.
+
+double* p = new double[n];
+입력받은 개수만큼 실수를 저장할 수 있도록 동적 배열을 생성한다.
+
+cout << n << "개의 실수를 입력 하시오.\n";
+사용자에게 실수 입력을 안내한다.
+
+for (int i = 0; i < n; i++)
+n개의 실수를 입력받기 위한 반복문이다.
+
+cin >> p[i];
+입력받은 값을 배열 p에 저장한다.
+
+double max = p[0];
+첫 번째 값을 최대값으로 초기화한다.
+
+for (int i = 1; i < n; i++)
+두 번째 값부터 마지막까지 반복한다.
+
+if (p[i] > max) max = p[i];
+현재 값이 max보다 크면 max를 갱신한다.
+
+cout << "최대값은 " << max << "입니다.\n";
+최대값을 출력한다.
+
+delete[] p;
+동적으로 할당한 배열 메모리를 해제한다.
+
+return 0;
+프로그램을 정상적으로 종료한다.
 
 # 실행결과
 <img width="322" height="196" alt="과제 4" src="https://github.com/user-attachments/assets/337f9fa6-d309-45ba-9586-15315a85f848" />
