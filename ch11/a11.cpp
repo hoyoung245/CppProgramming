@@ -11,12 +11,14 @@ using namespace std;
 
 int main() {
     int n;
+    cout << "입력할 정수의 개수를 입력하세요: ";
     cin >> n;
 
     if (n <= 0) return -1;
 
     int* p = new int[n];
 
+    cout << n << "개의 정수를 입력 하시오.\n";
     for (int i = 0; i < n; i++) {
         cin >> p[i];
     }
