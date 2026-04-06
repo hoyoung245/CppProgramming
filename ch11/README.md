@@ -24,15 +24,21 @@ nullptr은 C++11에서 도입된 포인터 전용 null 값으로, NULL보다 타
 # 소스코드 설명
 
 # 실행결과
+<img width="329" height="220" alt="과제3 " src="https://github.com/user-attachments/assets/406189a0-fc29-42f9-8cb2-9ef80926f62d" />
+
 
 # 실습과제 4
 
 # 소스코드 설명
 
 # 실행결과
+<img width="322" height="196" alt="과제 4" src="https://github.com/user-attachments/assets/337f9fa6-d309-45ba-9586-15315a85f848" />
+
 
 # 실습과제 5
 
 # 소스코드 설명
 
 # 실행결과
+<img width="359" height="111" alt="과제 5" src="https://github.com/user-attachments/assets/6652a64a-9f22-4d96-b1cb-f110cba96bed" />
+
