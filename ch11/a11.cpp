@@ -4,5 +4,77 @@
 // 작성자 : 2301417 석호영
 // **********************************************
 
-// 실습과제2 **********************************************
+// 실습과제3 **********************************************
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    if (n <= 0) return -1;
+
+    int* p = new int[n];
+
+    for (int i = 0; i < n; i++) {
+        cin >> p[i];
+    }
+
+    int sum = 0;
+    for (int i = 0; i < n; i++) sum += p[i];
+
+    cout << "평균값은 " << sum / n << "입니다.\n";
+
+    delete[] p;
+    return 0;
+}
+
+// 실습과제4 **********************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    if (n <= 0) return -1;
+
+    double* p = new double[n];
+
+    for (int i = 0; i < n; i++) {
+        cin >> p[i];
+    }
+
+    double max = p[0];
+    for (int i = 1; i < n; i++) {
+        if (p[i] > max) max = p[i];
+    }
+
+    cout << "최대값은 " << max << "입니다.\n";
+
+    delete[] p;
+    return 0;
+}
+
+
+// 실습과제5 **********************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    char* str = new char[n + 1];
+
+    cin.ignore();
+    cin.getline(str, n + 1);
+
+    cout << "입력한 문자열은 " << str << "입니다.\n";
+
+    delete[] str;
+    return 0;
+}
