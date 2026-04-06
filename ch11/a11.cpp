@@ -69,10 +69,12 @@ using namespace std;
 
 int main() {
     int n;
+    cout << "저장할 문자열의 크기를 입력하세요: ";
     cin >> n;
 
     char* str = new char[n + 1];
 
+    cout << "문자열을 입력하시오: ";
     cin.ignore();
     cin.getline(str, n + 1);
 
