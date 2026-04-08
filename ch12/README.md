@@ -38,5 +38,6 @@
 
 
 # 실행결과
+<img width="302" height="188" alt="과제 5" src="https://github.com/user-attachments/assets/920d4b59-7d74-4747-b0b7-e8c28c6e13be" />
 
 
