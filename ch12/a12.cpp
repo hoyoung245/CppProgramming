@@ -4,40 +4,6 @@
 // 작성자 : 2301417 석호영
 // **********************************************
 
-// 실습과제2 **********************************************
-
-#include <iostream>
-using namespace std;
-
-class Circle {
-    int radius;
-public:
-    Circle(int r) {
-        radius = r;
-    }
-
-    double getArea() {
-        return 3.14 * radius * radius;
-    }
-};
-
-int main() {
-    int radius;
-    while (true) {
-        cout << "반지름 입력(음수이면 종료)>> ";
-        cin >> radius;
-        if (radius < 0) break;
-
-        Circle* p = new Circle(radius);
-        cout << "원의 면적:" << p->getArea() << endl;
-
-        delete p;
-    }
-    return 0;
-}
-// 실습과제3 **********************************************
-
-
 // 실습과제4 **********************************************
 
 #include <iostream>
