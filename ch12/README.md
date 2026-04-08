@@ -30,6 +30,7 @@
 
 
 # 실행결과
+<img width="284" height="226" alt="과제 4" src="https://github.com/user-attachments/assets/2333fa1a-8837-4415-847d-bcb0f028a142" />
 
 # 실습과제 5
 
