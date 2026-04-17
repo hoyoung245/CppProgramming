@@ -66,6 +66,8 @@ num++;
 return 0;
 ```
 프로그램을 정상적으로 종료한다.
+# 실행결과
+<img width="363" height="183" alt="과제2" src="https://github.com/user-attachments/assets/c02620e8-6eb5-441e-ab4a-f6d66d919474" />
 
 # 실습과제 3
 
@@ -122,3 +124,7 @@ cout << "문자 a는 " << cnt << "개 있습니다.";
 return 0;
 ```
 프로그램을 정상적으로 종료한다.
+
+# 실행결과
+<img width="392" height="73" alt="과제3" src="https://github.com/user-attachments/assets/9e8da2b2-3b85-4a8a-957e-2ce4ecde3de4" />
+
