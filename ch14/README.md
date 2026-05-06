@@ -84,6 +84,66 @@ s2를 반환한다.
 # 실습과제 3
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+#include <string>
+```
+문자열 처리를 위해 string 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout, string 등을 사용한다.
+```
+string GetLatterString(string* s1, string* s2);
+```
+문자열 포인터 두 개를 받아 사전 순으로 더 뒤에 오는 문자열을 반환하는 함수 선언이다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+string s1("hello");
+```
+문자열 "hello"로 s1을 초기화한다.
+```
+string s2("world");
+```
+문자열 "world"로 s2를 초기화한다.
+```
+string res;
+```
+결과를 저장할 문자열 변수이다.
+```
+res = GetLatterString(&s1, &s2);
+```
+s1과 s2의 주소를 전달하여 두 문자열을 비교한 결과를 res에 저장한다.
+```
+cout << "사전에서 뒤에 나오는 문자열은 " << res << "입니다." << endl;
+```
+비교 결과를 출력한다.
+```
+string GetLatterString(string* s1, string* s2)
+```
+문자열 포인터를 이용하여 두 문자열을 비교하는 함수이다.
+```
+if (*s1 > *s2)
+```
+포인터가 가리키는 실제 문자열 값을 비교한다.
+```
+return *s1;
+```
+s1이 더 뒤에 오는 문자열이면 해당 값을 반환한다.
+```
+else
+```
+그 외의 경우 실행된다.
+```
+return *s2;
+```
+s2가 더 뒤에 오는 문자열이면 해당 값을 반환한다.
 
 # 실행결과
 <img width="402" height="67" alt="과제3" src="https://github.com/user-attachments/assets/e3003efc-e29d-4be8-bb07-70e95974bbe4" />
