@@ -151,6 +151,62 @@ s2가 더 뒤에 오는 문자열이면 해당 값을 반환한다.
 # 실습과제 4
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+#include <string>
+```
+문자열 처리를 위해 string 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout, string 등을 사용한다.
+```
+void SwapString(string& s1, string& s2);
+```
+두 문자열을 서로 교환하는 함수의 선언이다. 참조를 사용하여 원본 값을 직접 변경한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+string s1("hello");
+```
+문자열 "hello"로 s1을 초기화한다.
+```
+string s2("world");
+```
+문자열 "world"로 s2를 초기화한다.
+```
+cout << "호출전 s1:" << s1 << " s2:" << s2 << endl;
+```
+함수 호출 전 두 문자열의 값을 출력한다.
+```
+SwapString(s1, s2);
+```
+두 문자열을 교환하는 함수를 호출한다.
+```
+cout << "호출후 s1:" << s1 << " s2:" << s2 << endl;
+```
+함수 호출 후 두 문자열의 값이 서로 바뀐 것을 출력한다.
+```
+void SwapString(string& s1, string& s2)
+```
+참조를 이용하여 두 문자열의 값을 교환하는 함수이다.
+```
+string tmp = s1;
+```
+s1의 값을 임시 변수 tmp에 저장한다.
+```
+s1 = s2;
+```
+s2의 값을 s1에 대입한다.
+```
+s2 = tmp;
+```
+tmp에 저장해둔 원래 s1 값을 s2에 대입한다.
 
 # 실행결과
 <img width="257" height="87" alt="과제4" src="https://github.com/user-attachments/assets/4526225c-a3ee-464a-8bf8-1e7ff324d257" />
