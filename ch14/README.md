@@ -14,14 +14,70 @@
 임시변수가 생성되고, 반환값이 그 임시변수에 저장된다.
 # 함수 반환과정에서 임시변수가 필요한 이유를 설명하라
 함수 종료 시 지역변수가 소멸되므로 반환값을 유지하기 위해 임시변수가 필요하다.
-```
-
-```
 
 # 실습과제 2
 
 # 소스코드 설명
-
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+#include <string>
+```
+문자열 처리를 위해 string 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout, string 등을 사용한다.
+```
+string GetLatterString(string s1, string s2);
+```
+두 문자열을 비교하여 사전 순으로 더 뒤에 오는 문자열을 반환하는 함수의 선언이다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+string s1("hello");
+```
+문자열 "hello"로 s1을 초기화한다.
+```
+string s2("world");
+```
+문자열 "world"로 s2를 초기화한다.
+```
+string res;
+```
+결과를 저장할 문자열 변수이다.
+```
+res = GetLatterString(s1, s2);
+```
+두 문자열을 비교하여 더 뒤에 오는 문자열을 res에 저장한다.
+```
+cout << "사전에서 뒤에 나오는 문자열은 " << res << "입니다." << endl;
+```
+결과 문자열을 출력한다.
+```
+string GetLatterString(string s1, string s2)
+```
+두 문자열을 비교하여 사전 순으로 뒤에 오는 문자열을 반환하는 함수이다.
+```
+if (s1 > s2)
+```
+문자열 비교를 통해 s1이 s2보다 뒤에 있는지 확인한다.
+```
+return s1;
+```
+s1이 더 뒤에 있으면 s1을 반환한다.
+```
+else
+```
+그 외의 경우 실행된다.
+```
+return s2;
+```
+s2를 반환한다.
 # 실행결과
 <img width="387" height="62" alt="과제2" src="https://github.com/user-attachments/assets/a3e40502-05bc-4166-9787-e9b926db2be1" />
 
