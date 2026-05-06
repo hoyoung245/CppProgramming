@@ -23,16 +23,23 @@
 # 소스코드 설명
 
 # 실행결과
+<img width="387" height="62" alt="과제2" src="https://github.com/user-attachments/assets/a3e40502-05bc-4166-9787-e9b926db2be1" />
+
 # 실습과제 3
 
 # 소스코드 설명
 
 # 실행결과
+<img width="402" height="67" alt="과제3" src="https://github.com/user-attachments/assets/e3003efc-e29d-4be8-bb07-70e95974bbe4" />
+
 # 실습과제 4
 
 # 소스코드 설명
 
 # 실행결과
+<img width="445" height="167" alt="과제5" src="https://github.com/user-attachments/assets/6067e760-60d6-43a0-8763-c9d1bc5ea3f8" />
+<img width="257" height="87" alt="과제4" src="https://github.com/user-attachments/assets/4526225c-a3ee-464a-8bf8-1e7ff324d257" />
+
 # 실습과제 5
 
 # 소스코드 설명
