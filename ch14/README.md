@@ -213,6 +213,74 @@ tmp에 저장해둔 원래 s1 값을 s2에 대입한다.
 # 실습과제 5
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+#include <string>
+```
+문자열 처리를 위해 string 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout, string 등을 사용한다.
+```
+string GetMaxString(string arr[], int size);
+```
+문자열 배열에서 사전 순으로 가장 뒤에 오는 문자열을 반환하는 함수 선언이다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+string names[5];
+```
+5개의 문자열을 저장할 배열을 선언한다.
+```
+for (int i = 0; i < 5; i++)
+```
+5개의 이름을 입력받기 위한 반복문이다.
+```
+cout << "이름 >> ";
+```
+사용자에게 이름 입력을 안내한다.
+```
+getline(cin, names[i]);
+```
+한 줄의 문자열을 입력받아 배열에 저장한다.
+```
+string res = GetMaxString(names, 5);
+```
+배열에서 가장 뒤에 오는 문자열을 찾아 res에 저장한다.
+```
+cout << "사전에서 가장 뒤에 나오는 문자열은 " << res << endl;
+```
+결과를 출력한다.
+```
+string GetMaxString(string arr[], int size)
+```
+문자열 배열에서 가장 큰(사전상 뒤에 있는) 문자열을 찾는 함수이다.
+```
+string max = arr[0];
+```
+첫 번째 요소를 기준값으로 설정한다.
+```
+for (int i = 1; i < size; i++)
+```
+두 번째 요소부터 끝까지 비교한다.
+```
+if (arr[i] > max)
+```
+현재 문자열이 max보다 뒤에 있으면
+```
+max = arr[i];
+```
+max 값을 갱신한다.
+```
+return max;
+```
+가장 뒤에 있는 문자열을 반환한다.
 
 # 실행결과
 <img width="445" height="167" alt="과제5" src="https://github.com/user-attachments/assets/6067e760-60d6-43a0-8763-c9d1bc5ea3f8" />
