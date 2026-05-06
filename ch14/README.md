@@ -38,11 +38,10 @@
 
 # 실행결과
 <img width="445" height="167" alt="과제5" src="https://github.com/user-attachments/assets/6067e760-60d6-43a0-8763-c9d1bc5ea3f8" />
-<img width="257" height="87" alt="과제4" src="https://github.com/user-attachments/assets/4526225c-a3ee-464a-8bf8-1e7ff324d257" />
 
 # 실습과제 5
 
 # 소스코드 설명
 
 # 실행결과
-
+<img width="257" height="87" alt="과제4" src="https://github.com/user-attachments/assets/4526225c-a3ee-464a-8bf8-1e7ff324d257" />
