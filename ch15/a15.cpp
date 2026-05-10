@@ -78,3 +78,37 @@ void swap(int& a, int& b)
 }
 
 // 실습과제4 **********************************************
+
+#include<iostream> // 입출력 사용
+using namespace std; // std 네임스페이스 사용
+
+// 함수 선언
+void get_parts(double number, int& integerPart, double& decimalPart);
+
+int main()
+{
+    double number; // 실수 저장 변수
+    int integerPart; // 정수부 저장 변수
+    double decimalPart; // 소수부 저장 변수
+
+    cout << "실수를 입력하시오 : "; // 입력 안내
+    cin >> number; // 실수 입력
+
+    // 정수부와 소수부 계산 함수 호출
+    get_parts(number, integerPart, decimalPart);
+
+    // 정수부 출력
+    cout << "정수부 : " << integerPart << endl;
+
+    // 소수부 출력
+    cout << "소수부 : " << decimalPart << endl;
+
+    return 0; // 프로그램 종료
+}
+
+// 정수부와 소수부를 구하는 함수
+void get_parts(double number, int& integerPart, double& decimalPart)
+{
+    integerPart = (int)number; // 정수부 저장
+    decimalPart = number - integerPart; // 소수부 계산
+}
