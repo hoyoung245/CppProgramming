@@ -35,35 +35,46 @@ void add2(int& value)
 
 // 실습과제3 **********************************************
 
-#include<iostream>
-using namespace std;
+#include<iostream> // 입출력 사용
+using namespace std; // std 네임스페이스 사용
 
+// swap 함수 선언
 void swap(int& a, int& b);
 
 int main()
 {
-    int x, y;
+    int x, y; // 두 정수 변수 선언
 
-    cout << "정수x를 입력 하시오: ";
-    cin >> x;
+    cout << "정수x를 입력 하시오: "; // x 입력 안내
+    cin >> x; // x 입력
 
-    cout << "정수y를 입력 하시오: ";
-    cin >> y;
+    cout << "정수y를 입력 하시오: "; // y 입력 안내
+    cin >> y; // y 입력
 
+    // swap 함수 호출 전 값 출력
     cout << "swap함수 호출 전 x=" << x << ", y=" << y << endl;
 
-    swap(x, y);
+    swap(x, y); // 두 변수 값 교환
 
+    // swap 함수 호출 후 값 출력
     cout << "swap함수 호출 후 x=" << x << ", y=" << y << endl;
 
-    return 0;
+    return 0; // 프로그램 종료
 }
 
+// 두 정수 값을 교환하는 함수
 void swap(int& a, int& b)
 {
-    int temp;
+    int temp; // 임시 변수 선언
+
+    temp = a; // a 값을 temp에 저장
+    a = b; // b 값을 a에 저장
+    b = temp; // temp 값을 b에 저장
+}
 
     temp = a;
     a = b;
     b = temp;
 }
+
+// 실습과제4 **********************************************
