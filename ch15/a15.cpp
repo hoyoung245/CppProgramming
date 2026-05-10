@@ -6,28 +6,30 @@
 
 // 실습과제2 **********************************************
 
-#include<iostream>
-using namespace std;
+#include<iostream> // 입출력 사용
+using namespace std; // std 네임스페이스 사용
 
+// 함수 선언
 void add2(int& value);
 
 int main(void)
 {
-    int number;
+    int number; // 정수형 변수 선언
 
-    cout << "정수를 입력하세요 : ";
-    cin >> number;
+    cout << "정수를 입력하세요 : "; // 입력 안내문 출력
+    cin >> number; // 사용자로부터 정수 입력
 
-    add2(number);
+    add2(number); // number를 함수에 전달
 
-    cout << "2만큼 증가한 값 : " << number << endl;
+    cout << "2만큼 증가한 값 : " << number << endl; // 결과 출력
 
-    return 0;
+    return 0; // 프로그램 종료
 }
 
+// number 값을 2 증가시키는 함수
 void add2(int& value)
 {
-    value += 2;
+    value += 2; // 전달받은 값을 2 증가
 }
 
 
