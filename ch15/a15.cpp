@@ -61,3 +61,45 @@ void SwapString(string& a, string& b) {
 
 // 실습과제4 **********************************************
 
+#include <iostream>
+
+using namespace std;
+
+class Circle {
+    int radius;
+
+public:
+    Circle(int radius) {
+        this->radius = radius;
+    }
+
+    Circle& plus(int n) {
+        radius += n;
+        return *this;
+    }
+
+    Circle& minus(int n) {
+        radius -= n;
+
+        if (radius < 0)
+            radius = 0;
+
+        return *this;
+    }
+
+    int getRadius() {
+        return radius;
+    }
+};
+
+int main() {
+    Circle a(5);
+
+    a.plus(1).plus(2).plus(3)
+        .minus(3).minus(2).minus(1).minus(5);
+
+    cout << "객체 a의 반지름은 " << a.getRadius();
+
+    return 0;
+}
+
