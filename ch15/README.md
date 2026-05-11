@@ -146,6 +146,97 @@ temp에 저장해둔 원래 a의 값을 b에 저장한다.
 # 실습과제 4
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Circle
+```
+Circle 클래스를 선언한다.
+```
+int radius;
+```
+원의 반지름을 저장하는 정수형 멤버 변수이다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Circle(int radius)
+```
+반지름 값을 받아 객체를 생성하는 생성자이다.
+```
+this->radius = radius;
+```
+매개변수 radius 값을 멤버 변수 radius에 저장한다.
+```
+Circle& plus(int n)
+```
+반지름을 증가시키는 함수이며 자기 자신의 객체를 참조로 반환한다.
+```
+radius += n;
+```
+현재 반지름에 n만큼 더한다.
+```
+return *this;
+```
+현재 객체 자신을 반환하여 함수 연속 호출이 가능하게 한다.
+```
+Circle& minus(int n)
+```
+반지름을 감소시키는 함수이며 자기 자신의 객체를 참조로 반환한다.
+```
+radius -= n;
+```
+현재 반지름에서 n만큼 뺀다.
+```
+if (radius < 0)
+```
+반지름이 음수인지 확인한다.
+```
+radius = 0;
+```
+반지름이 음수가 되면 0으로 설정한다.
+```
+return *this;
+```
+현재 객체 자신을 반환한다.
+```
+int getRadius()
+```
+현재 반지름 값을 반환하는 함수이다.
+```
+return radius;
+```
+반지름 값을 반환한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+Circle a(5);
+```
+반지름이 5인 Circle 객체 a를 생성한다.
+```
+a.plus(1).plus(2).plus(3)
+```
+```
+.minus(3).minus(2).minus(1).minus(5);
+```
+plus와 minus 함수를 연속 호출하여 반지름 값을 변경한다.
+```
+cout << "객체 a의 반지름은 " << a.getRadius();
+```
+최종 반지름 값을 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 
 # 실행결과
 <img width="209" height="63" alt="과제 4" src="https://github.com/user-attachments/assets/956d7131-256a-4aa8-a53e-1c373839b5d3" />
