@@ -73,6 +73,70 @@ s[i] = toupper(s[i]);
 # 실습과제 3
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+#include <string>
+```
+문자열 처리를 위해 string 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout, string 등을 사용한다.
+```
+void SwapString(string& a, string& b);
+```
+두 문자열의 값을 서로 교환하는 함수 선언이다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+string s1("hello");
+```
+문자열 "hello"로 s1을 초기화한다.
+```
+string s2("world");
+```
+문자열 "world"로 s2를 초기화한다.
+```
+cout << "교환전 문자열 " << s1 << " " << s2 << endl;
+```
+교환 전 두 문자열을 출력한다.
+```
+SwapString(s1, s2);
+```
+두 문자열의 값을 서로 교환하는 함수를 호출한다.
+```
+cout << "교환후 문자열 " << s1 << " " << s2 << endl;
+```
+교환 후 문자열을 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
+```
+void SwapString(string& a, string& b)
+```
+참조를 이용하여 두 문자열의 값을 직접 교환하는 함수이다.
+```
+string temp;
+```
+문자열 값을 임시로 저장하기 위한 변수이다.
+```
+temp = a;
+```
+a의 값을 temp에 저장한다.
+```
+a = b;
+```
+b의 값을 a에 저장한다.
+```
+b = temp;
+```
+temp에 저장해둔 원래 a의 값을 b에 저장한다.
 
 # 실행결과
 <img width="261" height="85" alt="과제 3" src="https://github.com/user-attachments/assets/5fd4631b-bb02-4d7c-9b11-ecd8a570770d" />
