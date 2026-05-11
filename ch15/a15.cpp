@@ -1,38 +1,35 @@
 // **********************************************
-// 제 목 : C++5장-2
-// 날 짜 : 2026년 5월 10일
+// 제 목 : C++5장-3
+// 날 짜 : 2026년 5월 11일
 // 작성자 : 2301417 석호영
 // **********************************************
 
 // 실습과제2 **********************************************
 
-#include<iostream> // 입출력 사용
-using namespace std; // std 네임스페이스 사용
+#include <iostream>
+#include <string>
 
-// 함수 선언
-void add2(int& value);
+using namespace std;
 
-int main(void)
-{
-    int number; // 정수형 변수 선언
+void Uppercase(string& s);
 
-    cout << "정수를 입력하세요 : "; // 입력 안내문 출력
-    cin >> number; // 사용자로부터 정수 입력
+int main() {
+    string s1("hello");
 
-    add2(number); // number를 함수에 전달
+    cout << "변환전 문자열 " << s1 << endl;
 
-    cout << "2만큼 증가한 값 : " << number << endl; // 결과 출력
+    Uppercase(s1);
 
-    return 0; // 프로그램 종료
+    cout << "변환후 문자열 " << s1 << endl;
+
+    return 0;
 }
 
-// number 값을 2 증가시키는 함수
-void add2(int& value)
-{
-    value += 2; // 전달받은 값을 2 증가
+void Uppercase(string& s) {
+    for (int i = 0; i < s.length(); i++) {
+        s[i] = toupper(s[i]);
+    }
 }
-
-
 // 실습과제3 **********************************************
 
 #include<iostream> // 입출력 사용
