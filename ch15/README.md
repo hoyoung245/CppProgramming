@@ -34,3 +34,5 @@
 # 소스코드 설명
 
 # 실행결과
+<img width="209" height="63" alt="과제 4" src="https://github.com/user-attachments/assets/956d7131-256a-4aa8-a53e-1c373839b5d3" />
+
