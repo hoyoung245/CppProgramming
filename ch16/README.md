@@ -27,6 +27,8 @@
 
 
 # 실행결과
+<img width="252" height="83" alt="과제 3" src="https://github.com/user-attachments/assets/81a3cd1a-1c14-4c7c-9c4a-72d76a1a6061" />
+
 
 
 # 실습과제 4
