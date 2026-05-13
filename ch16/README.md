@@ -19,6 +19,7 @@
 
 
 # 실행결과
+<img width="366" height="156" alt="과제2" src="https://github.com/user-attachments/assets/c1057cdc-da90-4755-bca6-8663286d40d9" />
 
 # 실습과제 3
 
