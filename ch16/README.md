@@ -498,3 +498,4 @@ return 0;
 # 실행결과
 <img width="275" height="81" alt="과제 4" src="https://github.com/user-attachments/assets/93344c5a-c7bf-434d-93e8-9d98ca064c4a" />
 
+# 디폴트 복사 생성자가 얕은 복사를 수행하여 같은 동적 메모리를 두 번 해제했기 때문에 오류가 발생한다.
