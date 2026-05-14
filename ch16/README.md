@@ -329,6 +329,170 @@ return 0;
 # 실습과제 4
 
 # 소스코드 설명
+```
+#include <iostream>
+```
+표준 입출력을 사용하기 위해 iostream 헤더파일을 포함한다.
+```
+using namespace std;
+```
+std 네임스페이스를 사용하여 std:: 없이 cin, cout 등을 사용한다.
+```
+class Collector
+```
+정수 데이터를 저장하는 Collector 클래스를 선언한다.
+```
+int* p;
+```
+정수 데이터를 저장할 동적 배열 포인터이다.
+```
+int size = 0;
+```
+저장된 데이터의 개수를 저장하는 변수이며 0으로 초기화한다.
+```
+public:
+```
+외부에서 사용할 수 있는 멤버를 선언하는 접근 지정자이다.
+```
+Collector(int size, int values[]);
+```
+배열과 크기를 전달받아 객체를 생성하는 생성자 선언이다.
+```
+Collector(const Collector& src);
+```
+깊은 복사를 수행하는 복사 생성자 선언이다.
+```
+~Collector();
+```
+동적으로 할당한 메모리를 해제하는 소멸자 선언이다.
+```
+void show();
+```
+저장된 데이터를 출력하는 함수 선언이다.
+```
+int getSize() { return size; }
+```
+데이터 개수를 반환하는 함수이다.
+```
+int get(int index) { return p[index]; }
+```
+지정한 위치의 데이터를 반환하는 함수이다.
+```
+Collector::Collector(int size, int values[])
+```
+생성자를 정의하는 부분이다.
+```
+this->size = size;
+```
+입력받은 데이터 개수를 멤버 변수 size에 저장한다.
+```
+p = new int[size];
+```
+데이터를 저장할 배열을 동적으로 생성한다.
+```
+for (int i = 0; i < size; i++)
+```
+배열의 값을 복사하기 위한 반복문이다.
+```
+p[i] = values[i];
+```
+입력받은 배열의 값을 객체 배열에 저장한다.
+```
+Collector::Collector(const Collector& src)
+```
+복사 생성자를 정의하는 부분이다.
+```
+this->size = src.size;
+```
+원본 객체의 size 값을 복사한다.
+```
+p = new int[size];
+```
+새로운 배열 메모리를 동적으로 생성한다.
+```
+for (int i = 0; i < size; i++)
+```
+원본 객체의 데이터를 복사하기 위한 반복문이다.
+```
+p[i] = src.p[i];
+```
+원본 객체의 데이터를 새 배열에 복사한다.
+```
+Collector::~Collector()
+```
+소멸자를 정의하는 부분이다.
+```
+delete[] p;
+```
+동적으로 할당한 배열 메모리를 해제한다.
+```
+void Collector::show()
+```
+저장된 데이터를 출력하는 함수이다.
+```
+cout << "데이터 수 " << size << ": ";
+```
+데이터 개수를 출력한다.
+```
+for (int i = 0; i < size; i++)
+```
+배열의 모든 데이터를 출력하기 위한 반복문이다.
+```
+cout << p[i] << " ";
+```
+배열의 값을 출력한다.
+```
+cout << endl;
+```
+출력을 마친 후 줄을 바꾼다.
+```
+double calcAvg(Collector c)
+```
+Collector 객체를 매개변수로 받아 평균을 계산하는 함수이다.
+```
+int sum = 0;
+```
+합계를 저장할 변수를 0으로 초기화한다.
+```
+for (int i = 0; i < c.getSize(); i++)
+```
+모든 데이터를 더하기 위한 반복문이다.
+```
+sum += c.get(i);
+```
+각 데이터를 sum에 누적한다.
+```
+return (double)sum / c.getSize();
+```
+합계를 데이터 개수로 나누어 평균값을 반환한다.
+```
+int main()
+```
+프로그램이 시작되는 메인 함수이다.
+```
+int temp[] = { 69, 70, 71, 72, 74 };
+```
+정수 데이터를 저장한 배열이다.
+```
+Collector weight(4, temp);
+```
+배열의 앞 4개 값을 이용하여 Collector 객체를 생성한다.
+```
+double avg = calcAvg(weight);
+```
+객체를 함수에 전달하여 평균값을 계산한다.
+```
+weight.show();
+```
+저장된 데이터를 출력한다.
+```
+cout << "평균은 " << avg << endl;
+```
+계산된 평균값을 출력한다.
+```
+return 0;
+```
+프로그램을 정상적으로 종료한다.
 
 
 # 실행결과
