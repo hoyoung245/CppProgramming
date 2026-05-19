@@ -83,6 +83,9 @@ return 0;
 
 
 # 실행결과
+<img width="235" height="103" alt="1" src="https://github.com/user-attachments/assets/c3bc032b-6eb3-4812-b32f-0104252aaa1e" />
+
+
 
 # 실습과제 3
 
@@ -174,4 +177,5 @@ return 0;
 
 
 # 실행결과
+<img width="274" height="128" alt="2" src="https://github.com/user-attachments/assets/519e8d77-decc-47d9-a8ac-34be1575ae92" />
 
