@@ -111,6 +111,7 @@ else
 b를 반환한다.
 
 # 실행결과
+<img width="343" height="108" alt="1" src="https://github.com/user-attachments/assets/ffbc019e-c85f-46b8-b23a-8636a1a0641c" />
 
 
 # 실습과제 3
@@ -224,6 +225,9 @@ return 0;
 
 
 # 실행결과
+<img width="244" height="103" alt="2" src="https://github.com/user-attachments/assets/795950af-f111-4714-98ca-57e3a2043a9c" />
+
+
 
 # 실습과제 4
 
@@ -368,3 +372,5 @@ return 0;
 
 
 # 실행결과
+
+<img width="284" height="113" alt="3" src="https://github.com/user-attachments/assets/faea5e65-a522-429e-b319-2857cbd394f9" />
