@@ -113,16 +113,6 @@ return 0;
 # 실행결과
 <img width="215" height="88" alt="2" src="https://github.com/user-attachments/assets/507a41bc-6ff7-405b-8a89-25d0eb7993f7" />
 
-
-# 실습과제 3
-
-# 소스코드 설명
-
-
-# 실행결과
-<img width="253" height="92" alt="3" src="https://github.com/user-attachments/assets/f4721469-92df-43ca-b4ae-53fc04ec5ba4" />
-
-
 # 실습과제 3
 
 # 소스코드 설명
@@ -207,8 +197,9 @@ return 0;
 ```
 프로그램을 정상적으로 종료한다.
 
-
 # 실행결과
+<img width="253" height="92" alt="3" src="https://github.com/user-attachments/assets/f4721469-92df-43ca-b4ae-53fc04ec5ba4" />
+
 
 # 실습과제 4 - 1
 
