@@ -45,6 +45,44 @@ int main() {
 
 // 실습과제3 **********************************************
 
+#include <iostream>
+using namespace std;
+
+class Triangle {
+private:
+    static int numOfTriangle;
+
+public:
+    Triangle() {
+        numOfTriangle++;
+    }
+
+    ~Triangle() {
+        numOfTriangle--;
+    }
+
+    static int getNumofTriangle() {
+        return numOfTriangle;
+    }
+};
+
+int Triangle::numOfTriangle = 0;
+
+int main() {
+    Triangle* tri1 = new Triangle[5];
+
+    cout << "생성된 삼각형의 개수 : "
+        << Triangle::getNumofTriangle() << endl;
+
+    delete[] tri1;
+
+    Triangle tri2[15];
+
+    cout << "생성된 삼각형의 개수 : "
+        << Triangle::getNumofTriangle() << endl;
+
+    return 0;
+}
 // 실습과제4-1 ********************************************
 
 // 실습과제4- *********************************************
