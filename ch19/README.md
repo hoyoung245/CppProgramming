@@ -133,7 +133,6 @@ MyMath::GetMin(x, 5)
 
 ```
 클래스명으로 static 함수를 호출하여 배열의 최소값을 구한다.
-
 ```
 cout << "최소값은 : " << MyMath::GetMin(x, 5) << endl;
 
@@ -142,7 +141,6 @@ cout << "최소값은 : " << MyMath::GetMin(x, 5) << endl;
 
 ```
 return 0;
-
 ```
 프로그램을 정상적으로 종료한다.
 
