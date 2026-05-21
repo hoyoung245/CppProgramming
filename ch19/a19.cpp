@@ -146,8 +146,45 @@ int main() {
 
     return 0;
 }
-// 실습과제4- *********************************************
+// 실습과제4-2 *********************************************
 
+#include <iostream>
+using namespace std;
+
+void printMatrix() {
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << '*';
+        }
+        cout << endl;
+    }
+}
+
+void printMatrix(int row, int col) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << '*';
+        }
+        cout << endl;
+    }
+}
+
+void printMatrix(int row, int col, char ch) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << ch;
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    printMatrix();
+    printMatrix(2, 5, 'a');
+    printMatrix(1, 10);
+
+    return 0;
+}
 // 실습과제4- *********************************************
 
 
