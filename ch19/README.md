@@ -199,25 +199,3 @@ return 0;
 
 # 실행결과
 <img width="253" height="92" alt="3" src="https://github.com/user-attachments/assets/f4721469-92df-43ca-b4ae-53fc04ec5ba4" />
-
-
-# 실습과제 4 - 1
-
-# 소스코드 설명
-
-
-# 실행결과
-
-# 실습과제 4 - 2
-
-# 소스코드 설명
-
-
-# 실행결과
-
-# 실습과제 4 - 3
-
-# 소스코드 설명
-
-
-# 실행결과
