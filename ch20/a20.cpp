@@ -46,3 +46,49 @@ int main() {
 }
 // 실습과제3 **********************************************
 
+#include <iostream>
+using namespace std;
+
+class Complex;
+
+class ComplexManager {
+public:
+    Complex ComplexAdd(Complex x, Complex y);
+};
+
+class Complex {
+    int real;
+    int img;
+
+public:
+    Complex(int r = 0, int i = 0) {
+        real = r;
+        img = i;
+        cout << "복소수 " << real << "+ " << img << "j 생성" << endl;
+    }
+
+    void show() {
+        cout << real << "+" << img << "j" << endl;
+    }
+
+    friend class ComplexManager;
+};
+
+Complex ComplexManager::ComplexAdd(Complex x, Complex y) {
+    Complex temp;
+    temp.real = x.real + y.real;
+    temp.img = x.img + y.img;
+    return temp;
+}
+
+int main() {
+    Complex x(2, 3), y(-5, 10), sum;
+    ComplexManager man;
+
+    sum = man.ComplexAdd(x, y);
+
+    cout << "두 복소수의 합은 ";
+    sum.show();
+
+    return 0;
+}
