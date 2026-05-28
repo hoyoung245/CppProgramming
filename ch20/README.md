@@ -119,3 +119,6 @@ return 0;
 
 
 # 실행결과
+<img width="294" height="148" alt="2" src="https://github.com/user-attachments/assets/19232138-8c3c-4bb8-bda6-ebe329ce09c4" />
+
+
