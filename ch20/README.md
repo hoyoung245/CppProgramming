@@ -107,14 +107,10 @@ return 0;
 
 
 # 실행결과
+<img width="272" height="140" alt="1" src="https://github.com/user-attachments/assets/09fa1aad-8509-43c9-9ea0-65fc5f0e5eeb" />
 
 
-# 실습과제 2
 
-# 소스코드 설명
-
-
-# 실행결과
 
 
 # 실습과제 3
